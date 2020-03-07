@@ -16,7 +16,7 @@ public class LoggingAdvice implements MethodInterceptor {
 		for (int i = 0; i < args.length; i++) {
 			if (i == 0) {
 				System.out.println("Logging Information:");
-				System.out.println("Method & Parameters passed are: " + methodName + "(" + args[i]);
+				System.out.print("Method & Parameters passed are: " + methodName + "(" + args[i]);
 				continue;
 			}
 			System.out.print("," + args[i] + ")");
